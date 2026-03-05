@@ -253,8 +253,7 @@
     ham.addEventListener('click',()=>{mob.classList.add('open');document.body.style.overflow='hidden'});
     mc.addEventListener('click',()=>{mob.classList.remove('open');document.body.style.overflow=''});
     mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mob.classList.remove('open');document.body.style.overflow=''}));
-    const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}}),{threshold:.08,rootMargin:'0px 0px -28px 0px'});
-    document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+    if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}}),{threshold:.08,rootMargin:'0px 0px -28px 0px'});document.querySelectorAll('.fu').forEach(el=>obs.observe(el));}else{document.querySelectorAll('.fu').forEach(el=>el.classList.add('on'));}
   </script>
 </body>
 </html>
