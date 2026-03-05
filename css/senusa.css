@@ -551,6 +551,8 @@ section.dark  { background: var(--dark); color: var(--light); }
 @media (max-width: 600px) {
   .nav-links, .nav-cta { display: none; }
   .hamburger   { display: flex; }
+  .site-nav    { height: auto; padding: 0.5rem 0; }
+  .logo img    { height: 110px; }
   .svc-grid    { grid-template-columns: 1fr; }
   .method-grid { grid-template-columns: 1fr; background: none; gap: 0; }
   .method-step { border-bottom: 1px solid var(--border); }
