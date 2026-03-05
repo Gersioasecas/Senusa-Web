@@ -565,11 +565,11 @@ section.dark  { background: var(--dark); color: var(--light); }
 }
 
 /* ── Logo PNG overrides ───────────────────────────────────── */
-.logo img { height: 133px; width: auto; object-fit: contain; margin-top: 6px; }
+.logo img { height: 113px; width: auto; object-fit: contain; margin-top: 6px; }
 .site-footer .logo img { height: 138px; filter: invert(1) brightness(1.15); margin-top: 0; }
 
 /* ── Desktop nav: logo fits without being cut ──────────────── */
 @media (min-width: 601px) {
-  :root { --nav-h: 110px; }
-  .logo img { height: 108px; margin-top: 0; }
+  :root { --nav-h: 140px; }
+  .logo img { height: 140px; margin-top: 0; }
 }
