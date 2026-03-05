@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Círculo negro principal -->
+  <circle cx="50" cy="55" r="38" fill="#272525"/>
+  <!-- Hoja izquierda (blanca) -->
+  <path d="M44 28 C40 18, 28 16, 28 16 C28 16, 30 28, 40 32 C42 33, 44 31, 44 28Z" fill="#f1efe7"/>
+  <!-- Hoja derecha (blanca) -->
+  <path d="M56 25 C58 15, 70 11, 70 11 C70 11, 66 23, 56 26 C54 27, 54 26, 56 25Z" fill="#f1efe7"/>
+  <!-- Tallo pequeño -->
+  <path d="M49 32 C49 28, 51 24, 52 20" stroke="#f1efe7" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>
