@@ -561,5 +561,5 @@ section.dark  { background: var(--dark); color: var(--light); }
 }
 
 /* ── Logo PNG overrides ───────────────────────────────────── */
-.logo img { height: 104px; width: auto; object-fit: contain; }
-.site-footer .logo img { height: 92px; filter: invert(1) brightness(1.15); }
+.logo img { height: 156px; width: auto; object-fit: contain; }
+.site-footer .logo img { height: 138px; filter: invert(1) brightness(1.15); }
