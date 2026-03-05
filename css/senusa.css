@@ -198,7 +198,7 @@ section.dark  { background: var(--dark); color: var(--light); }
 .mob-overlay {
   display: none;
   position: fixed;
-  inset: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   z-index: 190;
   background: var(--bg);
   flex-direction: column;
@@ -533,6 +533,10 @@ section.dark  { background: var(--dark); color: var(--light); }
 .fu.d2  { transition-delay: .16s; }
 .fu.d3  { transition-delay: .24s; }
 .fu.d4  { transition-delay: .32s; }
+/* Fallback: si JS no activa las animaciones, mostrar contenido tras 1.5s */
+@keyframes fu-show { to { opacity: 1; transform: none; } }
+.fu { animation: fu-show 0s 1.5s forwards; }
+.fu.on { animation: none; }
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 960px) {
