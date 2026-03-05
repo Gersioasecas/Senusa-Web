@@ -16,7 +16,7 @@
   --body:     'Montserrat', system-ui, sans-serif;
   --r:        8px;
   --r-lg:     16px;
-  --nav-h:    80px;
+  --nav-h:    100px;
   --max:      1240px;
   --ease:     cubic-bezier(.4,0,.2,1);
   --t:        .26s;
@@ -565,5 +565,5 @@ section.dark  { background: var(--dark); color: var(--light); }
 }
 
 /* ── Logo PNG overrides ───────────────────────────────────── */
-.logo img { height: 156px; width: auto; object-fit: contain; }
+.logo img { height: 80px; width: auto; object-fit: contain; }
 .site-footer .logo img { height: 138px; filter: invert(1) brightness(1.15); }
