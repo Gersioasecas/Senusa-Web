@@ -60,7 +60,7 @@ h3 { font-size: 1.1rem; font-weight: 700; font-family: var(--body); letter-spaci
   text-transform: uppercase;
   color: var(--muted);
 }
-.eyebrow::before { content: "✦"; opacity: .5; font-size: .65em; }
+.eyebrow::before, .eyebrow::after { content: "✦"; opacity: .5; font-size: .65em; }
 .eyebrow.center  { justify-content: center; }
 
 /* ── Layout ───────────────────────────────────────────────── */
