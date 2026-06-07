@@ -102,6 +102,10 @@
                 <label>¿En qué podemos ayudarte?</label>
                 <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre tu empresa y lo que necesitas..." required></textarea>
               </div>
+              <input type="hidden" name="_subject" value="Nueva consulta desde senusa.com.mx">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
               <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center">Enviar mensaje</button>
               <p class="form-msg" id="form-msg"></p>
             </form>
@@ -116,8 +120,8 @@
 
   <script src="js/senusa.js"></script>
   <script>
-    /* Formulario de contacto — conectar a Formspree */
-    var ACTION_URL = "https://formspree.io/f/REEMPLAZA_CON_TU_ID";
+    /* Formulario de contacto — FormSubmit.co (gratis, sin cuenta). Envía a nutricio@senusa.com.mx */
+    var ACTION_URL = "https://formsubmit.co/ajax/nutricio@senusa.com.mx";
     document.getElementById("contact-form").addEventListener("submit", async function(e){
       e.preventDefault();
       var btn = this.querySelector("button[type=submit]");
